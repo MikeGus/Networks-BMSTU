@@ -33,7 +33,7 @@ void start_chat(int sockfd) {
         char response[MAX_RESPONSE_SIZE] = {0};
         read(sockfd, response, sizeof(response));
 
-        printf("From Server: %s", response);
+        printf("From Server: %s\nActual: %u\n", response, (unsigned) fileSizeActual);
     }
 }
 
